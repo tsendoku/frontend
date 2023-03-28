@@ -1,0 +1,111 @@
+main {
+  background-color: #171615;
+}
+.intro {
+  min-height: 680px;
+  background-image: url('/public/img/main_pic_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #171615;
+  padding: 537px 0px 68px 0px;
+  &-blocks {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 0px 88px 0px;
+  }
+  &-block {
+    display: flex;
+    align-items: center;
+    max-width: 360px;
+    p {
+      color: #bababa;
+      font-size: 20px;
+      font-weight: 400;
+      padding-left: 16px;
+    }
+  }
+  p {
+    font-size: 32px;
+    font-weight: 400;
+    width: 60%;
+  }
+  span {
+    font-weight: 800;
+    color: #ec6500;
+  }
+}
+
+.services {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 1060px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 730px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &-block {
+    padding-bottom: 60px;
+  }
+  p {
+    padding-top: 27px;
+    color: #bababa;
+  }
+}
+
+.autopark {
+  h5 {
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 47px;
+  }
+  &-carblocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 1060px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: 730px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &-carblock {
+    padding: 0px 55px 25px 0px;
+    h5 {
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      box-sizing: border-box;
+    }
+  }
+  &-text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    p,
+    span {
+      color: #bababa;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    span {
+      padding-left: 18px;
+    }
+    .firststring {
+      padding-top: 17px;
+    }
+  }
+  &-title {
+    min-width: 252px;
+  }
+}
