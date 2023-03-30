@@ -44,8 +44,21 @@ const SendForm = () => {
     }, 400);
     afterSending();
   };
+  // const inputs = document.querySelectorAll('input');
+  // let isValid = true;
+  // inputs.forEach((input) => {
+  //   if (!input.checkValidity()) {
+  //     isValid = false;
+  //   }
+  //   const elem = document.getElementById('sendButton');
+  //   if (isValid) {
+  //     elem.classList.add('allInputsareValid');
+  //   } else {
+  //     elem.classList.add('allInputsareValid');
+  //   }
+  // });
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="sendform">
       <div className="sendform container">
         <div className="sendform-uppertext container">
           <span>Хотите заказать машину?</span>
@@ -58,17 +71,17 @@ const SendForm = () => {
               className="nameInput"
               id="name"
               maxLength="30"
-              required="required"
               placeholder="Ваше имя"
               value={name}
+              required
               onChange={(e) => setName(e.target.value)}></input>
             <input
               type="number"
               className="phoneInput"
               id="phone"
-              required="required"
               placeholder="+7___ ___-__-__"
               value={phone}
+              required
               onChange={(e) => setPhone(e.target.value)}></input>
             <button type="submit" className="backcall">
               Заказать обратный звонок
@@ -95,7 +108,7 @@ const SendForm = () => {
               placeholder="Улица"
               value={street1}
               onChange={(e) => setStreet1(e.target.value)}></input>
-            <img src="img\form_replacement_icon.svg" alt="icon" />
+            <img src="img\form_replacement_icon_click.svg" alt="icon" />
             <input
               maxLength="25"
               className="cityInput"
@@ -131,7 +144,7 @@ const SendForm = () => {
               placeholder="~Вес"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}></input>
-            <button type="submit" className="sendButton">
+            <button type="submit" className="sendButton" id="sendButton">
               Отправить
             </button>
           </div>

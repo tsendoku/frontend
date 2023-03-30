@@ -2,7 +2,7 @@ import React from 'react';
 
 const Fororg = () => {
   return (
-    <div className="for-org container">
+    <div className="for-org container" id="for-org">
       <h3>Организациям</h3>
       <p>
         Мы нацелены на постоянное сотрудничество. Имея собственный автопарк и налаженную годами

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
   return (
@@ -12,13 +12,13 @@ const Header = () => {
           <Link to="/">
             <li>Главная</li>
           </Link>
-          <Link to="uslugi">
+          <Link to="/#uslugi">
             <li>Услуги</li>
           </Link>
-          <Link to="nash-autopark">
+          <Link to="/#autopark">
             <li>Наш Автопарк</li>
           </Link>
-          <Link to="for-org">
+          <Link to="/#for-org">
             <li>Организациям</li>
           </Link>
         </ul>

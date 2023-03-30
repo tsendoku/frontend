@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import CarBlock from '../components/CarBlock';
 import SendForm from '../components/SendForm';
@@ -47,7 +48,7 @@ const SiteBody = () => {
           </p>
         </div>
       </div>
-      <div className="blocks container">
+      <div className="blocks container" id="uslugi">
         <div className="block">
           <img src="img\utp_icon_1.svg" />
           <p>
@@ -70,30 +71,38 @@ const SiteBody = () => {
       <div className="services container">
         <div className="services-block">
           <img src="img\section_1.png" />
-          <p>
-            Квартирный <br /> и офисный переезд
-          </p>
+          <Link to="#sendform">
+            <p>
+              Квартирный <br /> и офисный переезд
+            </p>
+          </Link>
         </div>
         <div className="services-block">
           <img src="img\section_2.png" />
-          <p>
-            Грузовое такси, <br /> перевозка грузов
-          </p>
+          <Link to="#sendform">
+            <p>
+              Грузовое такси, <br /> перевозка грузов
+            </p>
+          </Link>
         </div>
         <div className="services-block">
           <img src="img\section_3.png" />
-          <p>
-            Грузоперевозки <br /> по межгороду
-          </p>
+          <Link to="#sendform">
+            <p>
+              Грузоперевозки <br /> по межгороду
+            </p>
+          </Link>
         </div>
         <div className="services-block">
           <img src="img\section_4.png" />
-          <p>
-            Организациям <br /> и корпоративным клиентам
-          </p>
+          <Link to="#sendform">
+            <p>
+              Организациям <br /> и корпоративным клиентам
+            </p>
+          </Link>
         </div>
       </div>
-      <div className="autopark container">
+      <div className="autopark container" id="autopark">
         <h5>Наш автопарк</h5>
         <div className="autopark-carblocks">{isLoading === true ? 'exdi' : cars}</div>
       </div>

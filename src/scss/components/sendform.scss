@@ -3,8 +3,8 @@
   background-image: url('/img/image_bg_form.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  min-height: 680px;
+  background-position: bottom;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   background-image: url('/img/Rectangle_form.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   max-width: 1200px;
   min-height: 502px;
 
@@ -44,12 +44,20 @@
   }
   input {
     color: #bababa;
-    background-color: #454545;
     min-width: 210px;
+    background-color: #454545;
     height: 36px;
     border: none;
     margin: 0px 16px 0px 0px;
     cursor: pointer;
+    &:valid {
+      color: #fff;
+    }
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
   @media (max-width: 800px) {
     .sendform-middleInputs {
@@ -89,26 +97,50 @@
 .nameInput {
   background: url('/img/form_name_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
+  &:valid {
+    background: url('/img/form_name_icon_click.svg') no-repeat scroll 3px 3px;
+    background-color: #797979;
+  }
 }
 .phoneInput {
   background: url('/img/form_phone_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
+  &:valid {
+    background: url('/img/form_phone_icon_click.svg') no-repeat scroll 3px 3px;
+    background-color: #797979;
+  }
 }
 .cityInput {
   background: url('/img/form_city_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
+  &:not(:placeholder-shown) {
+    background: url('/img/form_city_icon_click.svg') no-repeat scroll 3px 3px;
+    background-color: #797979;
+  }
 }
 .streetInput {
   background: url('/img/form_street_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
+  &:not(:placeholder-shown) {
+    background: url('/img/form_street_icon_click.svg') no-repeat scroll 3px 3px;
+    background-color: #797979;
+  }
 }
 .sizesInput {
   background: url('/img/form_size_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
+  &:not(:placeholder-shown) {
+    background: url('/img/form_size_icon_click.svg') no-repeat scroll 3px 3px;
+    background-color: #797979;
+  }
 }
 .weightInput {
   background: url('/img/form_weight_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
+  &:not(:placeholder-shown) {
+    background: url('/img/form_weight_icon_click.svg') no-repeat scroll 3px 3px;
+    background-color: #797979;
+  }
 }
 #size {
   width: 254px;
@@ -126,4 +158,8 @@
 
 .from {
   padding-left: 55px;
+}
+
+.allInputsareValid {
+  background-color: #ec6500;
 }
