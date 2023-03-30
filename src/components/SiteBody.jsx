@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import CarBlock from '../components/CarBlock';
 import SendForm from '../components/SendForm';
+import Fororg from './Fororg';
 
 const SiteBody = () => {
   const [items, setItems] = React.useState([]);
@@ -36,7 +37,6 @@ const SiteBody = () => {
       sizes={car.sizes}
     />
   ));
-  console.log(items);
   return (
     <main>
       <div className="intro">
@@ -47,20 +47,20 @@ const SiteBody = () => {
           </p>
         </div>
       </div>
-      <div className="intro-blocks container">
-        <div className="intro-block">
+      <div className="blocks container">
+        <div className="block">
           <img src="img\utp_icon_1.svg" />
           <p>
             Качественная <br /> и надёжная перевозка
           </p>
         </div>
-        <div className="intro-block">
+        <div className="block">
           <img src="img\utp_icon_2.svg" />
           <p>
             Быстрая подача <br /> машины
           </p>
         </div>
-        <div className="intro-block">
+        <div className="block">
           <img src="img\utp_icon_3.svg" />
           <p>
             Всегда <br /> низкие цены
@@ -97,7 +97,9 @@ const SiteBody = () => {
         <h5>Наш автопарк</h5>
         <div className="autopark-carblocks">{isLoading === true ? 'exdi' : cars}</div>
       </div>
+      <Fororg />
       <SendForm />
+      <br />
     </main>
   );
 };

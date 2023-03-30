@@ -18,6 +18,9 @@ const Header = () => {
           <Link to="nash-autopark">
             <li>Наш Автопарк</li>
           </Link>
+          <Link to="for-org">
+            <li>Организациям</li>
+          </Link>
         </ul>
       </nav>
       <div className="header-contacts">

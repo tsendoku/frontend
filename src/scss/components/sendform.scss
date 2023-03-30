@@ -1,9 +1,9 @@
 .wrapper {
   background-color: #171615;
-  background-image: url('/public/img/image_bg_form.png');
+  background-image: url('/img/image_bg_form.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   min-height: 680px;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .sendform {
-  background-image: url('/public/img/Rectangle_form.png');
+  background-image: url('/img/Rectangle_form.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -87,27 +87,27 @@
 }
 
 .nameInput {
-  background: url('/public/img/form_name_icon.svg') no-repeat scroll 3px 3px;
+  background: url('/img/form_name_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
 }
 .phoneInput {
-  background: url('/public/img/form_phone_icon.svg') no-repeat scroll 3px 3px;
+  background: url('/img/form_phone_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
 }
 .cityInput {
-  background: url('/public/img/form_city_icon.svg') no-repeat scroll 3px 3px;
+  background: url('/img/form_city_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
 }
 .streetInput {
-  background: url('/public/img/street.svg') no-repeat scroll 3px 3px;
+  background: url('/img/form_street_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
 }
 .sizesInput {
-  background: url('/public/img/form_size_icon.svg') no-repeat scroll 3px 3px;
+  background: url('/img/form_size_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
 }
 .weightInput {
-  background: url('/public/img/form_weight_icon.svg') no-repeat scroll 3px 3px;
+  background: url('/img/form_weight_icon.svg') no-repeat scroll 3px 3px;
   padding-left: 35px;
 }
 #size {

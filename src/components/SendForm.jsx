@@ -57,7 +57,7 @@ const SendForm = () => {
               type="text"
               className="nameInput"
               id="name"
-              maxlength="30"
+              maxLength="30"
               required="required"
               placeholder="Ваше имя"
               value={name}
@@ -80,7 +80,7 @@ const SendForm = () => {
           </div>
           <div className="sendform-middleInputs container">
             <input
-              maxlength="25"
+              maxLength="25"
               className="cityInput"
               type="text"
               id="city1"
@@ -88,7 +88,7 @@ const SendForm = () => {
               value={city1}
               onChange={(e) => setCity1(e.target.value)}></input>
             <input
-              maxlength="25"
+              maxLength="25"
               className="streetInput"
               type="text"
               id="street1"
@@ -97,7 +97,7 @@ const SendForm = () => {
               onChange={(e) => setStreet1(e.target.value)}></input>
             <img src="img\form_replacement_icon.svg" alt="icon" />
             <input
-              maxlength="25"
+              maxLength="25"
               className="cityInput"
               type="text"
               id="city2"
@@ -105,7 +105,7 @@ const SendForm = () => {
               value={city2}
               onChange={(e) => setCity2(e.target.value)}></input>
             <input
-              maxlength="25"
+              maxLength="25"
               className="streetInput"
               type="text"
               id="street2"
@@ -116,7 +116,7 @@ const SendForm = () => {
           <div className="sendform-bottomInputs container">
             <p className="sizes container">Габариты</p>
             <input
-              maxlength="25"
+              maxLength="25"
               className="sizesInput"
               type="text"
               id="size"
@@ -124,7 +124,7 @@ const SendForm = () => {
               value={size}
               onChange={(e) => setSize(e.target.value)}></input>
             <input
-              maxlength="25"
+              maxLength="25"
               className="weightInput"
               type="text"
               id="weight"
