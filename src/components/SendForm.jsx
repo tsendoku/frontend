@@ -44,19 +44,6 @@ const SendForm = () => {
     }, 400);
     afterSending();
   };
-  // const inputs = document.querySelectorAll('input');
-  // let isValid = true;
-  // inputs.forEach((input) => {
-  //   if (!input.checkValidity()) {
-  //     isValid = false;
-  //   }
-  //   const elem = document.getElementById('sendButton');
-  //   if (isValid) {
-  //     elem.classList.add('allInputsareValid');
-  //   } else {
-  //     elem.classList.add('allInputsareValid');
-  //   }
-  // });
   return (
     <div className="wrapper" id="sendform">
       <div className="sendform container">
